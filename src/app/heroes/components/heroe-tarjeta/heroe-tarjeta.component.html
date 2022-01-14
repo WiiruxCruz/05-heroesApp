@@ -23,6 +23,7 @@
     <button
       mat-button
       color="warn"
+      [routerLink]="['/heroes', heroe.id]"
     >
       Leer más...
     </button>
@@ -30,6 +31,7 @@
     <button
       mat-button
       color="info"
+      [routerLink]="['/heroes/editar', heroe.id]"
     >
       Editar
     </button>
