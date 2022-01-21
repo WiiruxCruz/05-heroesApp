@@ -12,7 +12,8 @@ export class HeroeComponent implements OnInit {
   constructor( private activateRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.activateRoute.params.subscribe(
+    this.activateRoute.params
+    .subscribe(
       ({ id }) => console.log( id )
     );
     //id del heroe
