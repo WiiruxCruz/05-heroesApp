@@ -24,6 +24,9 @@ export class AuthService {
       tap(
         //resp => console.log('AUTHSERVICE', resp)
         auth => this._auth = auth
+      ),
+      tap(
+        auth => localStorage.setItem('id', auth.id)
       )
     );
   }
